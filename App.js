@@ -8,7 +8,8 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {TouchableHighlight, Button, Image, Platform, StyleSheet, Text, View} from 'react-native';
+
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R reload,\n' + 'Cmd+D or shake for dev menu',
@@ -21,21 +22,38 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+
+      <View style={styles.container1}>
+        <Image source = {require('./briovalogo.png')} />
+        <TouchableHighlight
+          style={styles.button}
+          >
+        <Text> Checklist </Text>
+        </TouchableHighlight>
+        <Buttonß
+          title="Self Diagnosis"
+          color="#841584"
+        />
+        <Button
+          title="Call Nurse"
+          color="#841584"
+        />
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  container1: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+  },
+  button: {
+    alignItems: 'center',
+    backgroundColor: '#DDDDDD',
+    padding: 10
   },
   welcome: {
     fontSize: 20,
