@@ -1,14 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+    <name>Briova Patient</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A demo app for Briova Patient, an app to aid people living with chronic conditions. 
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="rohanjs2@illinois.edu" href="http://cordova.io">
+        Rohan Suresh and Joowon Kim
     </author>
     <content src="index.html" />
-    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <icon src="briova.jpg" />
+    <icon density="mdpi" height="57" platform="ios" src="briova.jpg" width="57" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -23,5 +24,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <plugin name="cordova-plugin-whitelist" spec="1" />
     <engine name="ios" spec="^4.5.5" />
 </widget>
