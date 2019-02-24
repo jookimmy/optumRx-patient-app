@@ -1,6 +1,6 @@
-# optumRx-patient-app
+# BriovaRx Patient Center
 
-HUGE SPECIAL THANKS TO THE PEOPLE WHO DESIGNED THE WEBRTC LIBRARY TO MAKE PEER 2 PEER CONNECTIONS AND DATA CHANNELS EASIER!
+*Huge special thanks to the people at WebRTC to make data channels and peer to peer connections easier!*
 
 Personalized mobile app for patients of Optum Rx to be able to treat themselves
 
