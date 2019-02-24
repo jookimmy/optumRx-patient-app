@@ -30,6 +30,8 @@
         -->
         <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *; img-src * filesystem: data:">
         <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src *; img-src * filesystem: data:">
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"/>
+
 
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
@@ -44,31 +46,35 @@
   		<link rel="stylesheet" href="css/custom.css">
         <title>Briova Patient Centre</title>
     </head>
+         
+    
     <body>
         <img src="logo.png" width=80% style="display:block;padding:20px; margin-left: auto;
-  margin-right: auto;">
+        margin-right: auto;" auto; onclick="location.href='loadingIndex.html';">
+        
         <div class="jumbotron" style="display:block;padding:20px; margin-left: auto;
   margin-right: auto;width:90%;">
-  		    <h1 class="display-4" style="color:white;font-size: 45px;">Welcome Back,<strong> Rohan!</strong></h1>
-  			<p class="lead" style="color:white;">This is your home page, you have access to all your information here, and links to all you other resources.</p>
+  		    <h1 class="display-4" style="color:white;font-size: 45px;"><strong>Video Chat</strong></h1>
+  			<p class="lead" style="color:white;">Just a moment while we connect you to one of our nurses</p>
   			<hr class="my-4">
         </div>
         
-        <div class="alert alert-secondary" role="alert" style="display:block;padding:20px; margin-left: auto;
-  margin-right: auto;width:90%;background-color: #ffb42b;color:white;font-size: 22px;" onclick="location.href='loadingcheck.html';">
-            Checklist
+        <div class="spinner-border text-primary" role="status" style="display:block;padding:20px; margin-left: auto;
+  margin-right: auto;">
+            <span class="sr-only">Loading...</span>
         </div>
-        <div class="alert alert-secondary" role="alert" style="display:block;padding:20px; margin-left: auto;
-  margin-right: auto;width:90%;background-color: #ffb42b;color:white;font-size: 22px;"  onclick="location.href='loading1.html';">
-            Self-Diagnosis
-        </div>
-        <div class="alert alert-secondary" role="alert" style="display:block;padding:20px; margin-left: auto;
-  margin-right: auto;width:90%;background-color: #ffb42b;color:white;font-size: 22px;" onclick="location.href='videochat.html';">
-           Call A Nurse
-        </div>
+    
+    <script>
         
+        window.onload = function() {
+            wait();
+        };
         
-       <!-- <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script> -->
+        function wait() {
+            setTimeout(function(){ location.href='actualVideo.html'; }, 1200);
+        };
+        
+    </script>
+       
     </body>
 </html>
