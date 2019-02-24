@@ -1,4 +1,7 @@
 # optumRx-patient-app
+
+HUGE SPECIAL THANKS TO THE PEOPLE WHO DESIGNED THE WEBRTC LIBRARY TO MAKE PEER 2 PEER CONNECTIONS AND DATA CHANNELS EASIER!
+
 Personalized mobile app for patients of Optum Rx to be able to treat themselves
 
 To use the phone app:
