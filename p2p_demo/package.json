@@ -2,9 +2,9 @@
   "name": "p2p-video",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "callServer.js",
   "scripts": {
-    "start": "budo index.js:bundle.js"
+    "start": "budo callServer.js:bundle.js"
   },
   "author": "Kyle Robinson Young <kyle@dontkry.com> (http://dontkry.com)",
   "license": "MIT",
