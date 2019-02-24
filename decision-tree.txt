@@ -2,6 +2,7 @@
 	- Used your Nebulizer?
 	- Taken your medications?
 	- Exercise for the day?
+	- 
 
 - Self Diagnosis
 	- Indigestion?
@@ -16,3 +17,5 @@
 
 
 - Call a Nurse
+
+*these are first aid methods, if issues deemed serious please contact nurse*
